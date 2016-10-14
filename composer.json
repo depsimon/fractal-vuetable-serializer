@@ -3,7 +3,6 @@
     "description": "A fractal serializer that works fine with vuetable.",
     "homepage": "https://github.com/depsimon/fractal-vuetable-serializer",
     "require": {},
-    "minimum-stability": "dev",
     "license": "MIT",
     "authors": [
         {
