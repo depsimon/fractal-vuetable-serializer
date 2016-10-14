@@ -6,7 +6,7 @@ This package gives you a fractal serializer that makes it easier to work with [v
 
 If you look into the source of [vuetable pagination](https://github.com/ratiw/vuetable-2/blob/master/src/components/VuetablePaginationMixin.vue) you can see what it expects to work.
 
-```
+```json
 {
     last_page: 10,
     current_page: 1,
@@ -18,7 +18,7 @@ If you look into the source of [vuetable pagination](https://github.com/ratiw/vu
 
 This is pretty annoying because by default when you return a fractal paginated collection, by default it does not return the same keys for the pagination. It's more something like this:
 
-```
+```json
 {
     total: 10,
     count: 100,
@@ -38,7 +38,7 @@ So I came up with this serializer that makes it easier to work with vuetables' d
 
 You can install the package via composer:
 
-```
+```bash
 composer require depsimon/fractal-vuetable-serializer
 ```
 
@@ -46,7 +46,7 @@ composer require depsimon/fractal-vuetable-serializer
 
 Use the VueTableSerializer in your backend code.
 
-```
+```php
 use DepSimon\FractalVueTableSerializer\VueTableSerializer;
 $manager->setSerializer(new VueTableSerializer());
 ```
@@ -54,7 +54,7 @@ $manager->setSerializer(new VueTableSerializer());
 If you're using Laravel, I suggest you to use the [laravel-fractal](https://github.com/spatie/laravel-fractal) package that makes it really easy to use fractal.
 In this case you can use it like this :
 
-```
+```php
 $paginator = Book::paginate(5);
 $books = $paginator->getCollection();
 
@@ -66,7 +66,7 @@ fractal()
 ```
 
 Here's an example VueJS component taking advantage of this serializer.
-```
+```html
 <template>
     <div>
         <vuetable
