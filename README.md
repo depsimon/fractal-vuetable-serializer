@@ -8,11 +8,11 @@ If you look into the source of [vuetable pagination](https://github.com/ratiw/vu
 
 ```json
 {
-    last_page: 10,
-    current_page: 1,
-    total: 100,
-    from: 1,
-    to: 10
+    "last_page": 10,
+    "current_page": 1,
+    "total": 100,
+    "from": 1,
+    "to": 10
 }
 ```
 
@@ -20,14 +20,14 @@ This is pretty annoying because by default when you return a fractal paginated c
 
 ```json
 {
-    total: 10,
-    count: 100,
-    per_page: 10,
-    current_page: 2,
-    total_pages: 10,
-    links: {
-        next: 'my-app.dev/books?page=2',
-        pref: 'my-app.dev/books?page=1'
+    "total": 10,
+    "count": 100,
+    "per_page": 10,
+    "current_page": 2,
+    "total_pages": 10,
+    "links": {
+        "next": 'my-app.dev/books?page=2',
+        "pref": 'my-app.dev/books?page=1'
     }
 }
 ```
