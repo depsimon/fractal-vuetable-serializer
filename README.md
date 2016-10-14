@@ -26,8 +26,8 @@ This is pretty annoying because by default when you return a fractal paginated c
     "current_page": 2,
     "total_pages": 10,
     "links": {
-        "next": 'my-app.dev/books?page=2',
-        "pref": 'my-app.dev/books?page=1'
+        "next": "my-app.dev/books?page=2",
+        "pref": "my-app.dev/books?page=1"
     }
 }
 ```
